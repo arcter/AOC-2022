@@ -32,4 +32,14 @@ func main() {
 		log.Fatalf("readLines: %s", err2)
 	}
 	task2(task2_file)
+	var task3_file, err3 = readLines("../task3-1.txt")
+	if err3 != nil {
+		log.Fatalf("readLines: %s", err3)
+	}
+	task3(task3_file)
+	var task4_file, err4 = readLines("../task4-1.txt")
+	if err4 != nil {
+		log.Fatalf("readLines: %s", err4)
+	}
+	task4(task4_file)
 }
