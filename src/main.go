@@ -42,4 +42,9 @@ func main() {
 		log.Fatalf("readLines: %s", err4)
 	}
 	task4(task4_file)
+	var task5_file, err5 = readLines("../task5-1.txt")
+	if err4 != nil {
+		log.Fatalf("readLines: %s", err5)
+	}
+	task4(task5_file)
 }
